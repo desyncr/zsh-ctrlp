@@ -6,3 +6,8 @@ Easier CtrlP in your zsh.
 - Configurable fuzzers (fzf, fzy, selecta, etc)
 - Configurable finder (find .)
 
+## Installation
+
+Using [Antigen](https://github.com/zsh-users/antigen) as follows:
+
+    antigen bundle desyncr/ctrlp
