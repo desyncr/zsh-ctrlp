@@ -1,0 +1,8 @@
+# ZSH CtrlP
+
+Easier CtrlP in your zsh.
+
+- Auto binds to `Ctrl+P`
+- Configurable fuzzers (fzf, fzy, selecta, etc)
+- Configurable finder (find .)
+
