@@ -16,7 +16,7 @@ done
 ctrlp() {
     zle reset-prompt
     # TODO FINDER_COMMAND env var is not used here
-    print -z - $BUFFER $( find . -not -path '*/\.*' | $CTRLP_FUZZER_COMMAND)
+    print -z - $BUFFER $( find . -not -path '*/\.*' -maxdepth 4 | $CTRLP_FUZZER_COMMAND)
     zle send-break
     # TODO EXECUTE_LINE
 }
