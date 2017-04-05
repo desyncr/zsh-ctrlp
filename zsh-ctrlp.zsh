@@ -5,7 +5,7 @@ CTRLP_FINDER_COMMAND=${CTRLP_FINDER_COMMAND:-'find . -not -path '\''*/\.*'\'''}
 CTRLP_SEARCH_FUZZERS=${CTRLP_SEARCH_FUZZERS:-true}
 
 # Search for fuzzers
-fuzzers=($CTRLP_FUZZER_COMMAND zsh-select fzy fpp fzf peco percol pick selecta)
+fuzzers=($CTRLP_FUZZER_COMMAND zsh-select fzf selecta fzy fpp peco percol pick)
 for fuzzer in $fuzzers; do
     if (( $+commands[$fuzzer]  )); then
         CTRLP_FUZZER_COMMAND=$fuzzer
